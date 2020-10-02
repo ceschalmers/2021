@@ -11,6 +11,7 @@ import { OrganisationsComponent } from './organisations/organisations.component'
 import { AboutComponent } from './about/about.component';
 import { PartnersComponent } from './partners/partners.component';
 import { ForkComponent } from './fork/fork.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ForkComponent } from './fork/fork.component';
     OrganisationsComponent,
     AboutComponent,
     PartnersComponent,
-    ForkComponent
+    ForkComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
