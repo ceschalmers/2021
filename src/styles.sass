@@ -10,8 +10,8 @@ body
 a
   text-decoration: none
   color: $default-dark
-  height: 100%
   width: 100%
+  height: 100%
   border: none
 
 a.normal-link
@@ -33,6 +33,20 @@ p
   letter-spacing: 1.2px
   line-height: 1.5em
 
+footer
+  font-size: $small-font-size
+
+div.logo
+  position: absolute
+  left: 0
+  top: 0
+  margin: 1em
+  width: 300px
+  height: 150px
+  background: url('./assets/media/black640x137.png')
+  background-size: contain
+  background-repeat: no-repeat
+
 .bright, body
   background: $default-bright
   color: $default-dark
@@ -49,7 +63,7 @@ p
   width: 100%
   height: 100vh
 
-.flex-center, .flex-cols, .flex-rows, .flex-end, .text-wrapper, .text-wrapper-2
+.flex-center, .flex-cols, .flex-rows, .flex-responsive, .flex-end, .text-wrapper, .text-wrapper-2
   display: -webkit-box
   display: -moz-box
   display: -ms-flexbox
@@ -63,7 +77,7 @@ p
 .flex-cols
   flex-direction: column
 
-.flex-rows
+.flex-rows, .flex-media-rows
   flex-direction: row
 
 .flex-end
@@ -75,3 +89,42 @@ p
 
 .text-wrapper-2
   width: 45%
+
+@media screen and (max-width: 1080px)
+  .flex-responsive
+    flex-direction: column
+
+  .text-wrapper-2
+    width: 85%
+
+  h1, h2, a
+    font-size: $moderate-font-size
+
+  app-footer
+    font-size: $small-font-size
+
+@media screen and (max-width: 600px)
+  .section
+    width: 100%
+    min-height: 100vh
+
+  div.logo
+    background: url('./assets/media/white640x137.png')
+    background-size: contain
+    background-repeat: no-repeat
+
+  #first
+    width: 100%
+    background: url('./assets/media/merdhad.jpg')
+    background-size: cover
+    background-position: top
+    background-repeat: no-repeat
+    justify-content: center
+    h1
+      color: $default-bright
+
+  #second, #third
+    display: none
+
+  p
+    font-size: $small-font-size
