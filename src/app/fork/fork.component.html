@@ -1,0 +1,16 @@
+<div class="split section flex-rows">
+  <div class="flex-center">
+    <a routerLink="/students" routerLinkActive="active" class="flex-center trans0-5">
+      <span inViewport (inViewportAction)="onIntersection($event)">
+          Students
+      </span>
+    </a>
+  </div>
+  <div class="flex-center bright">
+    <a routerLink="/organisations" routerLinkActive="active" class="flex-center trans0-5">
+      <span inViewport (inViewportAction)="onIntersection($event)" class="delay0-25">
+          Organisations
+      </span>
+    </a>
+  </div>
+</div>

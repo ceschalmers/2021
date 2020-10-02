@@ -1,0 +1,76 @@
+@import './assets/animations.sass'
+@import './assets/fonts.sass'
+@import './assets/colors.sass'
+
+body
+  margin: 0
+  font-family: $default-font
+
+a
+  text-decoration: none
+  color: $default-dark
+  height: 100%
+  width: 100%
+  border: none
+
+a.normal-link
+  font-family: Sans-serif
+  font-size: 1em
+
+h1
+  font-family: $heading-font
+  font-size: $huge-font-size
+  font-weight: bold
+
+h2, a
+  font-family: $heading-font
+  font-weight: bold
+  font-size: $big-font-size
+
+p
+  font-size: $default-font-size
+  letter-spacing: 1.2px
+  line-height: 1.5em
+
+.bright, body
+  background: $default-bright
+  color: $default-dark
+
+.dark
+  background: $default-dark
+  color: white
+
+.dark-lime
+  background: $default-dark
+  color: $ces-lime
+
+.section
+  width: 100%
+  height: 100vh
+
+.flex-center, .flex-cols, .flex-rows, .flex-end, .text-wrapper, .text-wrapper-2
+  display: -webkit-box
+  display: -moz-box
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+
+.flex-center
+  align-items: center
+  justify-content: center
+
+.flex-cols
+  flex-direction: column
+
+.flex-rows
+  flex-direction: row
+
+.flex-end
+  flex-direction: row
+  justify-content: flex-end
+
+.text-wrapper
+  width: 85%
+
+.text-wrapper-2
+  width: 45%
