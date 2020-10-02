@@ -90,6 +90,10 @@ div.logo
 .text-wrapper-2
   width: 45%
 
+#responsive-bg
+  h1
+    display: none
+
 @media screen and (max-width: 1080px)
   .flex-responsive
     flex-direction: column
@@ -108,22 +112,21 @@ div.logo
     width: 100%
     min-height: 100vh
 
+  #responsive-bg
+      background: url('./assets/media/merdhad.jpg')
+      background-size: cover
+      background-position: top
+      background-repeat: no-repeat
+      h1
+        display: block
+        color: $default-bright
+
   div.logo
     background: url('./assets/media/white640x137.png')
     background-size: contain
     background-repeat: no-repeat
 
-  #first
-    width: 100%
-    background: url('./assets/media/merdhad.jpg')
-    background-size: cover
-    background-position: top
-    background-repeat: no-repeat
-    justify-content: center
-    h1
-      color: $default-bright
-
-  #second, #third
+  #first, #second, #third
     display: none
 
   p
