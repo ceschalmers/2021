@@ -8,6 +8,7 @@ import { ParallaxDirective } from './parallax.directive';
 import { LandingComponent } from './landing/landing.component';
 import { StudentsComponent } from './students/students.component';
 import { OrganisationsComponent } from './organisations/organisations.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { OrganisationsComponent } from './organisations/organisations.component'
     ParallaxDirective,
     LandingComponent,
     StudentsComponent,
-    OrganisationsComponent
+    OrganisationsComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
