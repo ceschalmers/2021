@@ -6,12 +6,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ParallaxDirective } from './parallax.directive';
 import { LandingComponent } from './landing/landing.component';
+import { StudentsComponent } from './students/students.component';
+import { OrganisationsComponent } from './organisations/organisations.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ParallaxDirective,
-    LandingComponent
+    LandingComponent,
+    StudentsComponent,
+    OrganisationsComponent
   ],
   imports: [
     BrowserModule,
