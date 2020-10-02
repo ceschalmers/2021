@@ -10,6 +10,7 @@ import { StudentsComponent } from './students/students.component';
 import { OrganisationsComponent } from './organisations/organisations.component';
 import { AboutComponent } from './about/about.component';
 import { PartnersComponent } from './partners/partners.component';
+import { ForkComponent } from './fork/fork.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PartnersComponent } from './partners/partners.component';
     StudentsComponent,
     OrganisationsComponent,
     AboutComponent,
-    PartnersComponent
+    PartnersComponent,
+    ForkComponent
   ],
   imports: [
     BrowserModule,

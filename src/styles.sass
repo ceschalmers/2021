@@ -1,58 +1,77 @@
-/* You can add global styles to this file, and also import other style files */
 @import './assets/animations.sass'
+
+/* Fonts */
 @font-face
   font-family: 'Montserrat Bold'
   src: url('./assets/fonts/Montserrat-Bold.otf') format('opentype')
+$heading-font: 'Montserrat Bold', Arial
+$default-font: Serif
+$default-font-size: 1.25em
+$big-font-size: 3em
+$huge-font-size: 4em
+
+/* Colors */
+$default-dark: black
+$default-bright: whitesmoke
+$ces-lime: #aaf230
 
 body
   margin: 0
 
 a
   text-decoration: none
-  color: black
+  color: $default-dark
   height: 100%
   width: 100%
   border: none
 
 h1
-  font-family: 'Montserrat Bold', Arial
-  font-size: 4em
+  font-family: $heading-font
+  font-size: $huge-font-size
   font-weight: bold
 
 h2, a
-  font-family: 'Montserrat Bold', Arial
+  font-family: $heading-font
   font-weight: bold
-  font-size: 3em
+  font-size: $big-font-size
 
 p
-  font-size: 1.25em
+  font-family: $default-font
+  font-size: $default-font-size
 
 .bright, body
-  background: whitesmoke
-  color: black
+  background: $default-bright
+  color: $default-dark
 
 .dark
-  background: black
+  background: $default-dark
   color: white
+
+.dark-lime
+  background: $default-dark
+  color: $ces-lime
 
 .section
   width: 100%
   height: 100vh
 
-.flex-center
+.flex-center, .flex-cols, .flex-rows, .flex-end
+  display: -webkit-box
+  display: -moz-box
+  display: -ms-flexbox
+  display: -webkit-flex
   display: flex
+
+.flex-center
   align-items: center
   justify-content: center
 
 .flex-cols
-  display: flex
   flex-direction: column
 
 .flex-rows
-  display: flex
   flex-direction: row
 
 .flex-end
-  display: flex
   flex-direction: row
   justify-content: flex-end
