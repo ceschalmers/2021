@@ -19,7 +19,7 @@ In order to make the parallaxing work, most components are imported to the landi
 
 #### CSS/SASS
 The site is using sass https://sass-lang.com/. The general stylesheet is src/styles.sass, which imports some stylesheets from the src/assets/ folder. This is also where fonts, images, vectorized graphics, videos etc. should be located.
-There are also stylesheets local to the components, which are found in their respective folder under src/app/.
+There are also stylesheets local to the components, which are found in their respective folder under src/app/. It is important to keep the site responsive to different screen sizes and types of devices. Please familiarize yourself with flexbox, viewports, em and percentages.
 
 ## Development
 All development is made locally. If you are to contribute to the site, you are expected to be familiar with front end development aswell as angular on at least a beginner to intermediate level. That said, it could be the perfect opportunity to learn a new skill! To develop locally, initialize a new angular project called ceschalmers and replace the src/ folder with the folder in this repository. Some changes will need to be made to the angular.json file.
