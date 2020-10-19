@@ -7,12 +7,12 @@ body
   margin: 0
   font-family: $default-font
 
-a
+a.cover-link
   text-decoration: none
   color: $default-dark
-  width: 100%
-  height: 100%
   border: none
+  height: 100vh
+  width: 100%
 
 a.normal-link
   font-family: Sans-serif
@@ -61,7 +61,8 @@ div.logo
 
 .section
   width: 100%
-  height: 100vh
+  min-height: 100vh
+  height: 100%
 
 .flex-center, .flex-cols, .flex-rows, .flex-responsive, .flex-end, .text-wrapper, .text-wrapper-2
   display: -webkit-box
@@ -101,6 +102,9 @@ div.logo
   .text-wrapper-2
     width: 85%
 
+  a.cover-link
+    height: 50vh
+
   h1, h2, a
     font-size: $moderate-font-size
 
@@ -111,6 +115,13 @@ div.logo
   .section
     width: 100%
     min-height: 100vh
+
+  #partners
+    flex-direction: column
+    justify-content: space-between
+    img
+      max-width: 30%
+      margin: 1.5em
 
   #responsive-bg
       background: url('./assets/media/merdhad.jpg')
