@@ -1,5 +1,5 @@
 # Chalmers Entrepreneurship Society - Website
-Fellow entrepreneurs,
+Fellow entrepreneur,
 
 If you are reading this, you are likely an IT or PR person at CES. Or at the very least a part of the CES board, congratulations! The website is important to preserve the CES brand, aswell as a way for members to register and for companies to find us. Therefore, please involve both the PR and IT department in all major changes, especially if they are visible to the user. Good luck!
 
