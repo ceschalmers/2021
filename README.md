@@ -23,7 +23,7 @@ There are also stylesheets local to the components, which are found in their res
 
 ## Development
 All development is made locally. If you are to contribute to the site, you are expected to be familiar with front end development aswell as angular on at least a beginner to intermediate level. That said, it could be the perfect opportunity to learn a new skill! To develop locally, initialize a new angular project called ceschalmers and replace the src/ folder with the folder in this repository. Some changes will need to be made to the angular.json file.
-In order to build to the docs/ folder, the outputPath needs to be set to "docs" in the angular.json file (directory root): https://gist.github.com/emslGit/26ff2f6553ed30d8916a445f6780f85d#file-angular-json-L20
+In order to build to the docs/ folder, the outputPath needs to be set to "docs" in the angular.json file (directory root): https://github.com/ceschalmers/2021/blob/master/angular.json#L20
 
 There might be version conflicts if you are trying to develop locally. I used the following versions to develop:
 - Angular CLI: 10.1.4
