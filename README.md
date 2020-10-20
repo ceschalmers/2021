@@ -39,6 +39,8 @@ The current domain is https://ceschalmers.se. To build the site with the current
 
 ***It is crucial that the --baseHref value is the same as the domain.*** Even a minor change, such as using http instead of https or adding an extra "/" at the end will make this fail.
 
+After this you also need to add the unstaged newly compiled files docs/main.xxxxxx and docs/style.xxxxxx.
+
 Upon building the site, the CNAME file will be removed. Therefore, it is useful to unstage this deletion ```git restore --staged docs/CNAME```. The CNAME file can also be added back in the repository settings. ***If the contents of the CNAME file does not match the correct domain, or if there is none, the hosting will fail.***
 
 If the page works locally but turns out blank or returns 404 error, the things above should be the first ones to check.
