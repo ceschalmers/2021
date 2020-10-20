@@ -13,7 +13,9 @@ export class AboutComponent {
   }
 
   public onIntersection({target, visible}: { target: Element; visible: boolean }): void {
-    this.renderer.addClass(target, visible ? 'focus-in' : 'focus-out');
-    this.renderer.removeClass(target, visible ? 'focus-out' : 'focus-in');
+    if (!navigator.maxTouchPoints) {
+      this.renderer.addClass(target, visible ? 'focus-in' : 'focus-out');
+      this.renderer.removeClass(target, visible ? 'focus-out' : 'focus-in');
+    }
   }
 }
