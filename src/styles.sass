@@ -41,8 +41,8 @@ div.logo
   left: 0
   top: 0
   margin: 1em
-  width: 300px
-  height: 150px
+  width: 250px
+  height: 125px
   background: url('./assets/media/black640x137.png')
   background-size: contain
   background-repeat: no-repeat
@@ -105,11 +105,24 @@ div.logo
   a.cover-link
     height: 50vh
 
+  div.logo
+    width: 150px
+    height: 75px
+
+  p
+    font-size: $small-font-size
+
   h1, h2, a
     font-size: $moderate-font-size
 
   app-footer
     font-size: $small-font-size
+
+  .arrow span
+    width: 20px
+    height: 20px
+    border-bottom: 4px solid $ces-lime
+    border-right: 4px solid $ces-lime
 
 @media screen and (max-width: 600px)
   .section
@@ -121,12 +134,13 @@ div.logo
     justify-content: space-between
     img
       max-width: 30%
+      max-height: 15%
       margin: 1.5em
 
   #responsive-bg
       background: url('./assets/media/merdhad.jpg')
       background-size: cover
-      background-position: top
+      background-position: center
       background-repeat: no-repeat
       h1
         display: block
@@ -136,6 +150,8 @@ div.logo
     background: url('./assets/media/white640x137.png')
     background-size: contain
     background-repeat: no-repeat
+    width: 100px
+    height: 50px
 
   #first, #second, #third
     display: none
