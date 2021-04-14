@@ -1,3 +1,9 @@
+#How to run
+i terminal skriv: ```npm run start```
+Sen får du en länk/webbsidan poppar upp, därefter gör du ändringar och sparar så uppdateras det automatiskt i din webbläsare 
+Sist: ctrl c för att avbryta
+
+
 # Chalmers Entrepreneurship Society - Website
 Fellow entrepreneur,
 
